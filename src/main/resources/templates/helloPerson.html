@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+		<title>Greetings</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+	<body>
+		<h1> Viikko 2, tehtävä 1</h1>
+	
+		<span th:if="${age} &gt; 17" > Welcome <span
+		 th:text="', '+${name} + '!'"></span></span>
+	
+		<span th:if="${age} &lt; 17"> You are too young <span
+		th:text="', '+${name} + '!'" ></span></span>
+		
+	</body>
+</html>
